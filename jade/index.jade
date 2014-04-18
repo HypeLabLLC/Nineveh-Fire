@@ -19,15 +19,13 @@ html(class="no-js", lang="en")
         | browser. Please
         a(href='http://browsehappy.com/') upgrade your browser
         | to improve your experience.
+    include jumbotron.jade
     
-    div(id="wrapper")
+    div(id="wrapper") 
         
         //Fixed Sidebar
-        include sidenavbar.jade
-
-        //Main Jumbotron
-        include jumbotron.jade    
-          
+        include sidenavbar.jade 
+        
         //Page Content
         div(id="page-content-wrapper")
         
