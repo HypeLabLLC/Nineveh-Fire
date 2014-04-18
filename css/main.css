@@ -169,6 +169,11 @@ hr {
 
 .inset {
   padding: 20px;
+  padding-top: 0px;
+}
+
+.inset h2{
+    padding-bottom: 15px;
 }
 
 .headshot>img {
