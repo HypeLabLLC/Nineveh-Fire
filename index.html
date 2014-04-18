@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <style>
       body {
-        padding-top: 50px;
+        padding-top: 0px;
         padding-bottom: 20px;
       }
       .v-center {
@@ -42,72 +42,69 @@
       | browser. Please
       a(href='http://browsehappy.com/') upgrade your browser
       | to improve your experience.
+      
     -->
-    <div role="navigation" class="container-fluid">
-      <div class="row">
-        <div class="col-sm-3 col-md-2 sidebar">
-          <div class="nav nav-sidebar">
-            <ul>
-              <li class="active"><a href="#">Nineveh Fire Department</a></li>
-              <li><a href="#">Contact Info</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Fighters</a></li>
-              <li><a href="#">Sponsors</a></li>
-              <li><a href="#">Events</a></li>
-              <li><a href="#">Social</a></li>
-              <li><a href="#">Blog</a></li>
-            </ul>
+    <div id="wrapper">
+      <!--Fixed Sidebar-->
+      <div id="sidebar-wrapper" role="navigation">
+        <ul class="sidebar-nav">
+          <li class="sidebar-brand"><a href="#">Nineveh Fire Department</a></li>
+          <li><a href="#">Contact Info</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Fighters</a></li>
+          <li><a href="#">Sponsors</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Social</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <!--Main Jumbotron-->
+      <div class="jumbotron">
+        <div class="container-fluid">
+          <h1>Nineveh Township Volunteer Fire Department</h1>
+          <h2>Station 101</h2>
+        </div>
+      </div>
+      <!--Page Content-->
+      <div id="page-content-wrapper">
+        <div class="content-header"><a id="menu-toggle" href="#" class="btn btn-default"><i class="icon-reorder"></i></a></div>
+        <!--All Page Content Goes Here-->
+        <div class="page-content inset">
+          <div class="row">
+            <h2 class="text-center">About the Station</h2><img src="./img/fire_station_example.jpg" class="col-xs-8 img-responsive img-rounded">
+            <div class="col-sm-4 v-center"></div>
+            <p class="content"> This is some text about the Nineveh Fire Station. As you can tell, it's some really fucking awesome shit going on over there. There's a fucking flag, for fuck's sake. Flapping all the fuck over. Freedom. That's what's up.</p>
           </div>
+          <hr>
+          <div class="row">
+            <h2 class="text-center">Meet the Firefighters</h2>
+            <p class="text-center"></p>WE ARE LEGION
+            WE ARE NINEVEH
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-sm-6"> 
+              <h2 class="text-center">Blog</h2>
+              <p>tumblr feed/featured story<br>link to read more moves you to the embedded tumblr page</p>
+              <div class="col-sm-6"> </div>
+              <h2 class="text-center">Social</h2>
+              <p class="text-center">FAKKBUK<br>TWEETERER<br>BBM (CUZ RIM FTW)</p>
+            </div>
+            <hr>
+            <div class="row">
+              <h2 class="text-center">Sponsors</h2>
+            </div>
+            <hr>
+            <div class="row">
+              <h2 class="text-center">Contact</h2>
+            </div>
+            <hr>
+          </div>
+          <footer>
+            <p>© Suttl 2014</p>
+          </footer>
         </div>
       </div>
-    </div>
-    <!--Main jumbotron for a primary marketing message or call to action 
-    -->
-    <div class="jumbotron">
-      <div class="container-fluid">
-        <h1>SUTTL BUTTL MUTTL RAAH</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a role="button" class="btn btn-primary btn-lg">Learn more »</a></p>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <h2 class="text-center">About the Station</h2><img src="./img/fire_station_example.jpg" class="col-xs-8 img-responsive img-rounded">
-        <div class="col-sm-4 v-center">
-          <p class="content"> This is some text about the Nineveh Fire Station. As you can tell, it's some really fucking awesome shit going on over there. There's a fucking flag, for fuck's sake. Flapping all the fuck over. Freedom. That's what's up.</p>
-        </div>
-      </div>
-      <hr>
-      <div class="row">
-        <h2 class="text-center">Meet the Firefighters</h2>
-        <p class="text-center">
-          WE ARE LEGION
-          WE ARE NINEVEH
-        </p>
-      </div>
-      <hr>
-      <div class="row">
-        <div class="col-sm-6"> 
-          <h2 class="text-center">Blog</h2>
-          <p>tumblr feed/featured story<br>link to read more moves you to the embedded tumblr page</p>
-        </div>
-        <div class="col-sm-6"> 
-          <h2 class="text-center">Social</h2>
-          <p class="text-center">FAKKBUK<br>TWEETERER<br>BBM (CUZ RIM FTW)</p>
-        </div>
-      </div>
-      <hr>
-      <div class="row">
-        <h2 class="text-center">Sponsors</h2>
-      </div>
-      <hr>
-      <div class="row">
-        <h2 class="text-center">Contact</h2>
-      </div>
-      <hr>
-      <footer>
-        <p>© Suttl 2014</p>
-      </footer>
     </div>
     <!--/container 
     -->

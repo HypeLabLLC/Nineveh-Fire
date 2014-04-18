@@ -8,30 +8,9 @@ doctype html
 // [if gt IE 8] <!
 html(class="no-js", lang="en")
   // <![endif]
-  head
-    meta(charset='utf-8')
-    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
-    title Nineveh Volunteer Fire
-    meta(name='description', content='')
-    meta(name='viewport', content='width=device-width, initial-scale=1')
-    link(rel='stylesheet', href='css/bootstrap.min.css')
-    style.
-      body {
-        padding-top: 50px;
-        padding-bottom: 20px;
-      }
-      .v-center {
-        display:table;
-        height:300px;
-      }
-      .content {
-        display:table-cell;
-        vertical-align:middle;
-        text-align:center;
-      }
-    link(rel='stylesheet', href='//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css')
-    link(rel='stylesheet', href='css/main.css')
-    script(src='js/vendor/modernizr-2.6.2-respond-1.1.0.min.js')
+  
+  include head.jade
+
   body
     //if lt IE 7
       p.browsehappy
@@ -40,64 +19,70 @@ html(class="no-js", lang="en")
         | browser. Please
         a(href='http://browsehappy.com/') upgrade your browser
         | to improve your experience.
-    include navigation.jade
-
-    //
-       Main jumbotron for a primary marketing message or call to action 
-    .jumbotron
-      .container-fluid
-        h1 SUTTL BUTTL MUTTL RAAH
-        p
-          | This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.
-        p
-          a.btn.btn-primary.btn-lg(role='button') Learn more »
-    .container
-      .row
-        h2.text-center About the Station
-        img(src='./img/fire_station_example.jpg').col-xs-8.img-responsive.img-rounded
+    
+    div(id="wrapper")
         
-        .col-sm-4.v-center
-          p.content  This is some text about the Nineveh Fire Station. As you can tell, it's some really fucking awesome shit going on over there. There's a fucking flag, for fuck's sake. Flapping all the fuck over. Freedom. That's what's up.
-      
-      hr
-      
-      .row
-        h2.text-center Meet the Firefighters
-        p.text-center
-          | WE ARE LEGION
-          | WE ARE NINEVEH
+        //Fixed Sidebar
+        include sidenavbar.jade
+
+        //Main Jumbotron
+        include jumbotron.jade    
           
-      hr
+        //Page Content
+        div(id="page-content-wrapper")
+        
+            .content-header
+                a(id="menu-toggle" href="#" class="btn btn-default")
+                    i(class="icon-reorder")
+            
+            //All Page Content Goes Here
+            .page-content.inset
+                .row
+                    h2.text-center About the Station
+                    img(src='./img/fire_station_example.jpg').col-xs-8.img-responsive.img-rounded
+        
+                    .col-sm-4.v-center
+                    p.content  This is some text about the Nineveh Fire Station. As you can tell, it's some really fucking awesome shit going on over there. There's a fucking flag, for fuck's sake. Flapping all the fuck over. Freedom. That's what's up.
       
-      .row
-        .col-sm-6  
-          h2.text-center Blog
-          p
-            | tumblr feed/featured story
-            br
-            | link to read more moves you to the embedded tumblr page
-        .col-sm-6  
-          h2.text-center Social
-          p.text-center
-            | FAKKBUK
-            br
-            | TWEETERER
-            br
-            | BBM (CUZ RIM FTW)
+                hr
+      
+                .row
+                    h2.text-center Meet the Firefighters
+                    p.text-center
+                    | WE ARE LEGION
+                    | WE ARE NINEVEH
           
-      hr
+                hr
       
-      .row
-        h2.text-center Sponsors
+                .row
+                    .col-sm-6  
+                        h2.text-center Blog
+                        p
+                            | tumblr feed/featured story
+                            br
+                            | link to read more moves you to the embedded tumblr page
+                        .col-sm-6  
+                        h2.text-center Social
+                        p.text-center
+                            | FAKKBUK
+                            br
+                            | TWEETERER
+                            br
+                            | BBM (CUZ RIM FTW)
+          
+                    hr
       
-      hr
+                    .row
+                        h2.text-center Sponsors
       
-      .row
-        h2.text-center Contact
+                    hr
       
-      hr
-      footer
-        p © Suttl 2014
+                    .row
+                        h2.text-center Contact
+      
+                    hr
+                footer
+                    p © Suttl 2014
     //
        /container 
     script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
