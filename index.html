@@ -22,7 +22,7 @@
       }
       .v-center {
         display:table;
-        height:300px;
+        height:400px;
       }
       .content {
         display:table-cell;
@@ -53,21 +53,24 @@
       <!--Fixed Sidebar-->
       <div id="sidebar-wrapper" role="navigation"><a href="#"><img src="./img/nineveh_logo.gif" alt="Nineveh Logo"></a>
         <ul class="sidebar-nav">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Meet the Firemen</a></li>
-          <li><a href="#">Sponsors</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Social</a></li>
-          <li><a href="#">Blog</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#meet">Meet the Firemen</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#social">Social</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#sponsors">Sponsors</a></li>
         </ul>
-        <ul class="sidebar-contact">
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Emergency: 911</a></li>
-          <li><a href="#">Station: 1-111-111-1111</a></li>
-          <li><a href="#">Email: contact@ninevehfire.com</a></li>
-        </ul>
+        <!--ul.sidebar-contact
+        //li
+            //a(href="#") Contact
+        //li
+            //a(href="#") Emergency: 911
+        //li
+           //a(href="#") Station: 1-111-111-1111
+        //li
+            //a(href="#") Email: contact@ninevehfire.com
+        -->
       </div>
-      
       <div class="jumbotron">
         <div class="container-fluid">
           <h1>Nineveh Township </h1>
@@ -75,38 +78,61 @@
         </div>
       </div>
       <!--Page Content-->
+      <div id="page-content-overlay"></div>
       <div id="page-content-wrapper"><a id="menu-toggle" href="#" class="btn btn-default"><i class="fa fa-bars"></i></a>
         <!--All Page Content Goes Here-->
         <div class="page-content inset">
-          <div class="row">
-            <h2 class="text-center">About the Station</h2><img src="./img/fire_station1.jpg" alt="Nineveh Fire Station" class="col-xs-8 img-responsive img-rounded">
-            <div class="col-sm-4 v-center"></div>
-            <p class="content"> This is some text about the Nineveh Fire Station. As you can tell, it's some really fucking awesome shit going on over there. There's a fucking flag, for fuck's sake. Flapping all the fuck over. Freedom. That's what's up.</p>
+          <div id="about" class="row">
+            <h2 class="text-center">About the Station</h2><img src="./img/fire_station1.jpg" alt="Nineveh Fire Station" class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-0 img-responsive img-rounded">
+            <div class="col-xs-12 col-sm-4 v-center">
+              <div class="content">
+                <h3>Ninevah township is</h3>
+                <p>
+                  a population of nearly 1,000
+                  people in Southern Johnson
+                  County.
+                </p>
+                <p>This all-volunteer department responds from a single station in a mixed rural and residential district. Nineveh provides Fire and Rescue response to nearly 1,000 residents over 15 square miles.</p>
+              </div>
+            </div>
           </div>
           <hr>
-          <div class="row">
+          <div id="meet" class="row">
             <h2 class="text-center">Meet the Firefighters</h2>
-            <p class="text-center"></p>WE ARE LEGION
-            WE ARE NINEVEH
+            <div class="headshots col-xs-12">
+              <div class="headshot img-circle col-sm-3 col-xs-4"><img src="./img/firefighters/headshots/shot1.jpg" class="img-responsive img-circle"></div>
+              <div class="headshot img-circle col-sm-3 col-xs-4"><img src="./img/firefighters/headshots/shot2.jpg" class="img-responsive img-circle"></div>
+              <div class="headshot img-circle col-sm-3 col-xs-4"><img src="./img/firefighters/headshots/shot3.jpg" class="img-responsive img-circle"></div>
+              <div class="headshot img-circle col-sm-3 col-xs-4"><img src="./img/firefighters/headshots/shot4.jpg" class="img-responsive img-circle"></div>
+              <div class="headshot col-sm-3 col-xs-4"><img src="./img/firefighters/headshots/shot5.jpg" class="img-responsive img-circle"></div>
+              <div class="headshot img-circle col-sm-3 col-xs-4"><img src="./img/firefighters/headshots/shot6.jpg" class="img-responsive img-circle"></div>
+            </div>
+          </div>
+          <hr>
+          <div id="events" class="row">
+            <div class="col-xs-12 calendarSpace"></div>
           </div>
           <hr>
           <div class="row">
-            <div class="col-sm-6"> 
+            <div id="blog" class="col-sm-6">
               <h2 class="text-center">Blog</h2>
-              <p>tumblr feed/featured story<br>link to read more moves you to the embedded tumblr page</p>
+              <div class="feature-post">
+                <p>This week is Dispatcher appreciation week. The Nineveh Fire Dept. would like to thank the Johnson County PSAP communication center. It's not easy managing the chaos that can happen without a moments notice. Also would like to point out and thank one of our own. Assistant Chief Josh Elmore who works as a dispatcher at the JoCo PSAP. We appreciate what you all do. Thank you</p><a href="">
+                  <p>Read more blog posts...</p></a>
+              </div>
             </div>
-            <div class="col-sm-6"> 
+            <div id="social" class="col-sm-6">
               <h2 class="text-center">Social</h2>
-              <p class="text-center">FAKKBUK<br>TWEETERER<br>BBM (CUZ RIM FTW)</p>
+              <div id="twitterfeed"><a href="https://twitter.com/NinevehFire" data-widget-id="457262631330394112" class="twitter-timeline">Tweets by @NinevehFire
+                  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></a></div>
+            </div>
+            <div class="col-sm-12">
+              <p style="font-size: 2.5em" class="text-center"><br><a href="https://www.facebook.com/pages/Nineveh-Fire-Dept/178061308872956"><i class="fa fa-facebook">&nbsp;</i></a><a href="https://twitter.com/NinevehFire"><i class="fa fa-twitter">&nbsp;</i></a><a href=""><i class="fa fa-tumblr"></i></a></p>
             </div>
           </div>
           <hr>
-          <div class="row">
+          <div id="sponsors" class="row">
             <h2 class="text-center">Sponsors</h2>
-          </div>
-          <hr>
-          <div class="row">
-            <h2 class="text-center">Contact</h2>
           </div>
           <hr>
           <footer>
@@ -120,6 +146,8 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\\/script>')</script>
     <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="bower_components/moment/min/moment.min.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
     <script>

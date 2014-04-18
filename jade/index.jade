@@ -27,54 +27,81 @@ html(class="no-js", lang="en")
         include jumbotron.jade
         
         //Page Content
+        #page-content-overlay
         div(id="page-content-wrapper")
             a(id="menu-toggle" href="#" class="btn btn-default")
                     i(class="fa fa-bars")
             
             //All Page Content Goes Here
             .page-content.inset
-                .row
+                .row(id='about')
                     h2.text-center About the Station
-                    img(src='./img/fire_station1.jpg' alt='Nineveh Fire Station').col-xs-8.img-responsive.img-rounded
+                    img(src='./img/fire_station1.jpg' alt='Nineveh Fire Station').col-xs-8.col-xs-offset-2.col-sm-8.col-sm-offset-0.img-responsive.img-rounded
         
-                    .col-sm-4.v-center
-                    p.content  This is some text about the Nineveh Fire Station. As you can tell, it's some really fucking awesome shit going on over there. There's a fucking flag, for fuck's sake. Flapping all the fuck over. Freedom. That's what's up.
+                    .col-xs-12.col-sm-4.v-center
+                        .content
+                            h3
+                                | Ninevah township is
+                            p
+                                | a population of nearly 1,000
+                                | people in Southern Johnson
+                                | County.
+                            p
+                                | This all-volunteer department responds from a single station in a mixed rural and residential district. Nineveh provides Fire and Rescue response to nearly 1,000 residents over 15 square miles.
+
+
       
                 hr
       
-                .row
+                .row(id='meet')
                     h2.text-center Meet the Firefighters
-                    p.text-center
-                    | WE ARE LEGION
-                    | WE ARE NINEVEH
+                    .headshots.col-xs-12
+                        .headshot.img-circle.col-sm-3.col-xs-4
+                            img(src='./img/firefighters/headshots/shot1.jpg').img-responsive.img-circle
+                        .headshot.img-circle.col-sm-3.col-xs-4
+                            img(src='./img/firefighters/headshots/shot2.jpg').img-responsive.img-circle
+                        .headshot.img-circle.col-sm-3.col-xs-4
+                            img(src='./img/firefighters/headshots/shot3.jpg').img-responsive.img-circle
+                        .headshot.img-circle.col-sm-3.col-xs-4
+                            img(src='./img/firefighters/headshots/shot4.jpg').img-responsive.img-circle
+                        .headshot.col-sm-3.col-xs-4
+                            img(src='./img/firefighters/headshots/shot5.jpg').img-responsive.img-circle
+                        .headshot.img-circle.col-sm-3.col-xs-4
+                            img(src='./img/firefighters/headshots/shot6.jpg').img-responsive.img-circle
           
+                hr
+                
+                .row(id='events')
+                    .col-xs-12.calendarSpace
+                
                 hr
       
                 .row
-                    .col-sm-6  
+                    .col-sm-6(id='blog')
                         h2.text-center Blog
-                        p
-                            | tumblr feed/featured story
-                            br
-                            | link to read more moves you to the embedded tumblr page
-                    .col-sm-6  
+                        .feature-post
+                            p
+                                | This week is Dispatcher appreciation week. The Nineveh Fire Dept. would like to thank the Johnson County PSAP communication center. It's not easy managing the chaos that can happen without a moments notice. Also would like to point out and thank one of our own. Assistant Chief Josh Elmore who works as a dispatcher at the JoCo PSAP. We appreciate what you all do. Thank you
+                            a(href='')
+                                p Read more blog posts...
+                    .col-sm-6(id='social')
                         h2.text-center Social
-                        p.text-center
-                            | FAKKBUK
+                        include twitterfeed
+                    .col-sm-12
+                        p.text-center(style='font-size: 2.5em')
                             br
-                            | TWEETERER
-                            br
-                            | BBM (CUZ RIM FTW)
+                            a(href='https://www.facebook.com/pages/Nineveh-Fire-Dept/178061308872956')
+                                i.fa.fa-facebook &nbsp;
+                            a(href='https://twitter.com/NinevehFire')
+                                i.fa.fa-twitter &nbsp;
+                            a(href='')
+                                i.fa.fa-tumblr
+                            
           
                 hr
       
-                .row
+                .row(id='sponsors')
                     h2.text-center Sponsors
-      
-                hr
-      
-                .row
-                    h2.text-center Contact
       
                 hr
                 footer
@@ -85,6 +112,8 @@ html(class="no-js", lang="en")
     script.
       window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\\/script>')
     script(src='js/vendor/bootstrap.min.js')
+    script(src='bower_components/moment/min/moment.min.js')
+    script(src='bower_components/underscore/underscore.js')
     script(src='js/plugins.js')
     script(src='js/main.js')
     script.
