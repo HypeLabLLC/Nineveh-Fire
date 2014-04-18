@@ -15,8 +15,9 @@ $(window).on('resize', function() {
     verticalize();
 });
 
+
 $(window).on('load', function() {
    verticalize(); 
-    $('#sidebar-wrapper a').smoothScroll();
     $('.calendarSpace').clndr();
+    $('a').smoothScroll();
 });

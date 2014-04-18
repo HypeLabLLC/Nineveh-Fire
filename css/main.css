@@ -15,6 +15,7 @@
 
 html, body {
     height: 100%;
+    overflow-x: hidden;
 }
 
 .jumbotron {
@@ -184,6 +185,63 @@ a {
 
 .fa-tumblr {
   color: gray;
+}
+
+.clndr {
+  font-size: 1.2em;
+}
+
+.clndr-controls {
+  width: 100%;
+  cursor: pointer;
+}
+
+.clndr-control-button, .month {
+  display: table-cell;
+  width: 1%;
+}
+
+.clndr-control-button.rightalign {
+  text-align: right;
+}
+
+.month {
+  text-align: center;
+}
+
+.clndr-table {
+  width: 100%;
+}
+
+.day {
+  text-align: center;
+  height: 50px;
+  background: #ffffff; /* Old browsers */
+  background: -moz-linear-gradient(top,  #ffffff 1%, #fafafa 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#ffffff), color-stop(100%,#fafafa)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #ffffff 1%,#fafafa 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #ffffff 1%,#fafafa 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #ffffff 1%,#fafafa 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #ffffff 1%,#fafafa 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#fafafa',GradientType=0 ); /* IE6-9 */
+
+
+}
+
+.header-day {
+  background: #ce2029; /* Old browsers */
+  background: -moz-linear-gradient(top,  #ce2029 1%, #ff4c4c 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#ce2029), color-stop(100%,#ff4c4c)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #ce2029 1%,#ff4c4c 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #ce2029 1%,#ff4c4c 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #ce2029 1%,#ff4c4c 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #ce2029 1%,#ff4c4c 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ce2029', endColorstr='#ff4c4c',GradientType=0 ); /* IE6-9 */
+
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  border-right: 1px solid #ce2029;
 }
 
 @media (max-width:1000px) {
