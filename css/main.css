@@ -4,11 +4,11 @@
 
 @font-face {
     font-family: 'Haymaker';
-    src: url('/fonts/haymaker-webfont.eot');
-    src: url('/fonts/haymaker-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/haymaker-webfont.woff') format('woff'),
-         url('/fonts/haymaker-webfont.ttf') format('truetype'),
-         url('/fonts/haymaker-webfont.svg#haymakerregular') format('svg');
+    src: url('../fonts/haymaker-webfont.eot');
+    src: url('../fonts/haymaker-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/haymaker-webfont.woff') format('woff'),
+         url('../fonts/haymaker-webfont.ttf') format('truetype'),
+         url('../fonts/haymaker-webfont.svg#haymakerregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -18,17 +18,20 @@ html, body {
 }
 
 .jumbotron {
+    display: block;
     padding-top: 10px;
     padding-right: 5px;
     height: 500px;
-    background-image: url(/img/fire_engine2.jpg);
-    background-size: 100% 100%;
+    background-image: url(../img/fire_engine2.jpg);
+    background-size: cover;
 }
 
 .jumbotron h1 {
+    width: auto;
     text-align: right;
     font-family: Haymaker, "Arial Black", Gadget, sans-serif;
-    color: #ce2029;
+    color: white;
+    background: rgba(0,0,0,0.6);
     font-size: 3em;
 }
 
@@ -38,14 +41,10 @@ html, body {
 }
 
 #sidebar-wrapper {
-  margin-left: -250px;
-  left: 250px;
   width: 250px;
-  background: rgba(222,222,222,0.9);
   position: fixed;
+  left: 0px;
   top: 0px;
-  height: 100%;
-  overflow-y: auto;
   z-index: 1000;
   transition: all 0.4s ease 0s;
   font-family: Haymaker, "Arial Black", Gadget, sans-serif;
@@ -58,13 +57,6 @@ html, body {
 
 #page-content-wrapper {
   width: 100%;
-}
-
-#sidebar-wrapper > a {
-    display: block;
-    -webkit-box-shadow: 0 8px 6px -6px black;
-	   -moz-box-shadow: 0 8px 6px -6px black;
-	        box-shadow: 0 8px 6px -6px black;
 }
 
 #sidebar-wrapper a img {
@@ -82,29 +74,27 @@ html, body {
   display: block;
 }
 
-.sidebar-nav li {
-  line-height: 60px;
-  text-align: center;
-}
-
-.sidebar-nav li a {
-  color: #ce2029;
+.sidebar-nav a {
   display: block;
-  margin: 2 0;
+  margin: 2px 0;
+  color: #ce2029;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.6em;
-  border-bottom: 2px solid #ce2029;
+  text-align: center;
+  line-height: 60px;
+  transition: color 0.3s ease;
+  transition: background 0.2s ease;
 }
 
-.sidebar-nav li a:hover {
+.sidebar-nav a:hover {
+  background: #ce2029;
   color: #fff;
-  background: rgba(255,255,255,0.2);
   text-decoration: none;
 }
 
-.sidebar-nav li a:active,
-.sidebar-nav li a:focus {
+.sidebar-nav a:active,
+.sidebar-nav a:focus {
   text-decoration: none;
 }
 
@@ -148,6 +138,7 @@ html, body {
 
 #menu-toggle {
   display: none;
+  transition: all ease 0.4s;
 }
 
 .inset {
@@ -157,26 +148,34 @@ html, body {
 @media (max-width:767px) {
 
 #wrapper {
+  position: relative;
   padding-left: 0;
+  transition: all ease 0.4s;
 }
 
 #sidebar-wrapper {
-  left: 0;
+  left: -250px;
 }
 
 #wrapper.active {
-  position: relative;
   left: 250px;
 }
 
 #wrapper.active #sidebar-wrapper {
-  left: 250px;
+  left: 0px;
   width: 250px;
   transition: all 0.4s ease 0s;
 }
 
+#wrapper.active #menu-toggle {
+  left: 255px;
+}
+
 #menu-toggle {
-  display: inline-block;
+  display: block;
+  position: fixed;
+  top: 5px;
+  left: 5px;
 }
 
 .inset {

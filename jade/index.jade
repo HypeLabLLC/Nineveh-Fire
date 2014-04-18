@@ -19,19 +19,17 @@ html(class="no-js", lang="en")
         | browser. Please
         a(href='http://browsehappy.com/') upgrade your browser
         | to improve your experience.
-    include jumbotron.jade
     
     div(id="wrapper") 
         
         //Fixed Sidebar
         include sidenavbar.jade 
+        include jumbotron.jade
         
         //Page Content
         div(id="page-content-wrapper")
-        
-            .content-header
-                a(id="menu-toggle" href="#" class="btn btn-default")
-                    i(class="icon-reorder")
+            a(id="menu-toggle" href="#" class="btn btn-default")
+                    i(class="fa fa-bars")
             
             //All Page Content Goes Here
             .page-content.inset
@@ -89,6 +87,9 @@ html(class="no-js", lang="en")
     script(src='js/vendor/bootstrap.min.js')
     script(src='js/plugins.js')
     script(src='js/main.js')
+    script.
+        $(".jumbotron").backstretch("img/fire_engine1.jpg");
+
     //
        Google Analytics: change UA-XXXXX-X to be your site's ID. 
     script.
