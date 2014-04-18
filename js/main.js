@@ -12,12 +12,16 @@ function verticalize() {
 }
 
 $(window).on('resize', function() {
+    $('.headshot>img').height(function() {
+      return $(this).width();
+    });
     verticalize();
 });
 
 
 $(window).on('load', function() {
    verticalize(); 
+    $('.headshot>img').width('200px');
     $('.calendarSpace').clndr();
     $('a').smoothScroll();
 });
