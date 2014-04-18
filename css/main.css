@@ -18,6 +18,15 @@ html, body {
     overflow-x: hidden;
 }
 
+hr {
+    border: 0px;
+    height: 2px;
+    background-image: -webkit-linear-gradient(left, #ccc, #ce2029, #ccc);
+    background-image: -moz-linear-gradient(left, #ccc, #ce2029, #ccc);
+    background-image: -ms-linear-gradient(left, #ccc, #ce2029, #ccc);
+    background-image: -o-linear-gradient(left, #ccc, #ce2029, #ccc);
+}
+
 .jumbotron {
     display: block;
     padding-top: 10px;
