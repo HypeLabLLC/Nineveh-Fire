@@ -20,6 +20,7 @@ html, body {
 .jumbotron {
     padding-top: 10px;
     padding-right: 5px;
+    height: 500px;
     background-image: url(/img/fire_engine2.jpg);
     background-size: 100% 100%;
 }
@@ -56,6 +57,9 @@ html, body {
 
 #sidebar-wrapper > a {
     display: block;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
 }
 
 #sidebar-wrapper a img {
