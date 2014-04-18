@@ -26,13 +26,11 @@ html(class="no-js", lang="en")
         include sidenavbar.jade 
         include jumbotron.jade
         
-        hr
-        
         //Page Content
         #page-content-overlay
         div(id="page-content-wrapper")
             a(id="menu-toggle" href="#" class="btn btn-default")
-                    i(class="fa fa-bars")
+                i(class="fa fa-bars")
             
             //All Page Content Goes Here
             .page-content.inset
@@ -83,9 +81,16 @@ html(class="no-js", lang="en")
                     .col-sm-6(id='blog')
                         h2.text-center Blog
                         .feature-post
+                            .headshot.img-circle.col-xs-12
+                            img(src='./img/firefighters/headshots/shot2.jpg').img-responsive.img-circle.col-xs-6
+                            p
+                                strong
+                                    | April 18
+                                    br
+                                    | Todd writes...
                             p
                                 | This week is Dispatcher appreciation week. The Nineveh Fire Dept. would like to thank the Johnson County PSAP communication center. It's not easy managing the chaos that can happen without a moments notice. Also would like to point out and thank one of our own. Assistant Chief Josh Elmore who works as a dispatcher at the JoCo PSAP. We appreciate what you all do. Thank you
-                            a(href='')
+                            a(href='').text-center
                                 p Read more blog posts...
                     .col-sm-6(id='social')
                         h2.text-center Social
