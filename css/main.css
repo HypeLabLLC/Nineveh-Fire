@@ -60,10 +60,8 @@ hr {
   transition: all 0.4s ease 0s;
   font-family: Haymaker, "Arial Black", Gadget, sans-serif;
   display: block;
-  border-right: 2px solid #ce2029;
-  -webkit-box-shadow: 10px 0 10px -10px black;
-  -moz-box-shadow: 10px 0 10px -10px black;  
-   box-shadow: 0 0 7px #333;
+  background-color: rgb(240,240,240);
+  height: 100%;
 }
 
 #page-content-wrapper {
@@ -84,6 +82,10 @@ hr {
 #sidebar-wrapper a img {
     padding: 20px 0px 20px 0px;
     display: block;
+    border-right: 2px solid #ce2029;
+    -webkit-box-shadow: 10px 0 10px -10px black;
+    -moz-box-shadow: 10px 0 10px -10px black;  
+    box-shadow: 0 0 7px #333;
     margin: 0 auto;
 }
 
@@ -102,9 +104,8 @@ hr {
 
 .sidebar-nav a {
   display: block;
-  margin: 2px 0;
+  margin: 0px 0;
   color: #ce2029;
-  border-bottom: 2px, #000000;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.6em;
@@ -112,6 +113,7 @@ hr {
   line-height: 60px;
   transition: color 0.3s ease;
   transition: background 0.2s ease;
+  box-shadow: 0px 2px 2px -1px rgba(0,0,0,0.2);
 }
 
 .sidebar-nav a:hover {
