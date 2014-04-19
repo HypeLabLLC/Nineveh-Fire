@@ -82,12 +82,18 @@ hr {
 #sidebar-wrapper a img {
     padding: 20px 0px 20px 0px;
     display: block;
+    margin: 0 auto;
+}
+
+#navlogo {
+    width: 100%;
     border-right: 2px solid #ce2029;
     -webkit-box-shadow: 10px 0 10px -10px black;
     -moz-box-shadow: 10px 0 10px -10px black;  
     box-shadow: 0 0 7px #333;
-    margin: 0 auto;
+    background-color: white;
 }
+    
 
 .sidebar-nav, .sidebar-contact {
   position: absolute;
