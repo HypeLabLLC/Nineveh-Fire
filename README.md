@@ -1,16 +1,17 @@
-# Nineveh Fire Website Project #
+ Nineveh Fire Website Project 
+ ----------------------------------
 ## Hypelab, LLC ##
 
--- Authors --
+## Authors ##
 
 Gavin Robley
 Jordan Timmerman
 
--- Client --
+## Client ##
 
 Nineveh Fire Department
 
--- Project Website --
+## Project Website ##
 
 ninevehfire.org
 
