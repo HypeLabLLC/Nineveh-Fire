@@ -3,11 +3,9 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
-
-# THANKS
-
-    <name>
+    Gavin Robley -- Bizzy Fella (& some tech too) 
+    
+    Jordan Timmerman -- Techy -- @skorlir
 
 # TECHNOLOGY COLOPHON
 

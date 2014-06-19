@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Suttl Custom Styles
+   Suttl Styles
    ========================================================================== */
 
 @font-face {
@@ -17,13 +17,23 @@ html, body {
     overflow-x: hidden;
 }
 
+::selection {
+	background: rgb(255, 50, 50); /* Safari */
+    color: white;
+}
+
+::-moz-selection {
+	background: rgb(255, 50, 50); /* Firefox */
+    color: white;
+}
+
 hr {
     border: 0px;
-    height: 2px;
-    background-image: -webkit-linear-gradient(left, #ccc, #ce2029, #ccc);
-    background-image: -moz-linear-gradient(left, #ccc, #ce2029, #ccc);
-    background-image: -ms-linear-gradient(left, #ccc, #ce2029, #ccc);
-    background-image: -o-linear-gradient(left, #ccc, #ce2029, #ccc);
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, #eee, #ce2029, #eee);
+    background-image: -moz-linear-gradient(left, #eee, #ce2029, #eee);
+    background-image: -ms-linear-gradient(left, #eee, #ce2029, #eee);
+    background-image: -o-linear-gradient(left, #eee, #ce2029, #eee);
 }
 
 .jumbotron {
@@ -47,12 +57,12 @@ hr {
 }
 
 #wrapper {
-  padding-left: 250px;
+  padding-left: 270px;
   transition: all 0.4s ease 0s;
 }
 
 #sidebar-wrapper {
-  width: 250px;
+  width: 270px;
   position: fixed;
   left: 0px;
   top: 0px;
@@ -62,6 +72,7 @@ hr {
   display: block;
   background-color: rgb(240,240,240);
   height: 100%;
+  overflow-y: auto;
 }
 
 #page-content-wrapper {
@@ -71,7 +82,7 @@ hr {
 #page-content-overlay {
   position: fixed;
   top: 0;
-  left: 250px;
+  left: 0;
   display: none;
   width: 100%;
   height: 100%;
@@ -96,7 +107,7 @@ hr {
     
 
 .sidebar-nav, .sidebar-contact {
-  width: 250px;
+  width: 100%;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -130,7 +141,7 @@ hr {
 
 .sidebar-contact {
   position: absolute;
-  bottom: 10px;
+  bottom: 0;
   font-family: sans-serif;
 }
 
@@ -190,6 +201,33 @@ a {
 
 .fa-tumblr {
   color: gray;
+}
+
+.emergency-icons {
+  position: fixed;
+  right: 30px;
+  bottom: 15px;
+  width: 80px;
+  text-align: center;
+  z-index: 999;
+  font-size: 20px;
+  color: rgb(240, 49, 49);
+  text-shadow: 0px 0px 8px white;
+}
+
+.emergency-icons>a:hover {
+  color: red;
+  text-decoration: none;
+}
+
+.emergency-icons i:hover {
+  color: red;
+}
+
+.emergency-icons i {
+  font-size: 50px;
+  margin-top: 10px;
+  color: rgb(251, 51, 51);
 }
 
 .clndr {
@@ -256,23 +294,23 @@ a {
     padding-left: 0;
     transition: all ease 0.4s;
   }
-
-  #sidebar-wrapper {
-    left: -250px;
+  
+  html.active {
+    overflow-y: hidden;
   }
 
-  #wrapper.active {
-    left: 250px;
+  #sidebar-wrapper {
+    left: -270px;
   }
 
   #wrapper.active #sidebar-wrapper {
     left: 0px;
-    width: 250px;
+    width: 270px;
     transition: all 0.4s ease 0s;
   }
 
   #wrapper.active #menu-toggle {
-    left: 255px;
+    left: 275px;
   }
 
   #menu-toggle {
@@ -282,9 +320,41 @@ a {
     left: 5px;
     z-index: 999;
   }
+  
+  .jumbotron h1 {
+    margin-left: 10px;
+    width: 100%;
+  }
 
   .inset {
     padding: 15px;
+  } 
+  
+  .emergency-icons {
+    font-size: 18px;
+    width: 70px;
+    right: 10px;
+  }
+  
+  .emergency-icons i {
+    font-size: 45px;
+  }
+  
+  .emergency-icons.active i {
+    color: white;
+  }
+  
+  .emergency-icons.active i:hover {
+    color: rgb(255, 49, 49);
+  }
+  
+  .emergency-icons.active {
+    color: white;
   }
 }
 
+@media (max-width: 700px) {
+  .backstretch img {
+    left: -8% !important;
+  }
+}
