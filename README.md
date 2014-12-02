@@ -4,12 +4,12 @@
 
 ## Authors ##
 
-Gavin Robley
+Gavin Robley & 
 Jordan Timmerman
 
 ## Client ##
 
-Nineveh Fire Department
+Nineveh Volunteer Fire Department
 
 ## Project Website ##
 
