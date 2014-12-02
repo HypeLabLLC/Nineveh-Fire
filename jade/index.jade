@@ -42,15 +42,12 @@ html(class="no-js", lang="en")
                         .content
                             h3
                                 | Ninevah Fire Department serves
-                            p
-                                | a population of nearly 1,000
-                                | people in Southern Johnson
-                                | County.
-                            p
-                                | This all-volunteer department responds from a single station in a mixed rural and residential district. Nineveh provides Fire and Rescue response to nearly 1,000 residents over 15 square miles.
+                            p.
+                                 a population of 5,000 people in Southern Johnson County.
+                                
+                            p.
+                                This all-volunteer department responds from a single station in a mixed rural and residential district. Nineveh provides Fire and Rescue response to nearly 5,000 residents.
 
-
-      
                 hr
       
                 .row(id='meet')
@@ -110,13 +107,46 @@ html(class="no-js", lang="en")
       
                 .row(id='sponsors')
                     h2.text-center Sponsors
-      
+                        img.img.img-responsive.img-circle(src='http://cdn.shopify.com/s/files/1/0169/4874/products/wb-firefighter_1024x1024.jpg?v=1359147443', style='display: block; margin: 0 auto; width: 40%;')
+                        h4.text-center Support us! Please and thank you.
+                        
                 hr
+                        
+                .row(id='joinUs')
+                    .content
+                        h2.text-center Join Us
+                        p.
+                            Nineveh is in search of good, hardworking individuals that would like to make a difference in the community. We are in need of individuals from various trades, vehicle technicians, public safety and more. 
+                            
+                        p.
+                            If you think your skills could benefit your community, please apply.
+                        p.
+                            In return, we will train in the skills of fire fighting, operating Fire/EMS equipment and emergency medical services. The training that we make available can lead to employment opportunities at other public safety organizations.
+                        p.
+                            The NTVFD family would like to make you a part of our family. Join us in making our community a better and safer place to live.
+                        p.
+                            Questions? Call (317) 933-2567
+                        p
+                            | Ready to join us? Print off this 
+                            a(href='./NinevehApplication.pdf', style="color: #F03131;") application 
+                            | and fax it to (317) 933-2509.
+                            
+                hr
+      
                 footer
-                    p © Suttl 2014
+                    p © Hypelab 2014
+            
+            .emergency-icons
+                a(href='tel:+13179332567')
+                    i.fa.fa-phone-square
+                    |  Call Us 
+                a(href='tel:911')
+                    i.fa.fa-warning
+                    |  Call 911
+                
     //
        /container 
-    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
     script.
       window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\\/script>')
     script(src='js/vendor/bootstrap.min.js')
